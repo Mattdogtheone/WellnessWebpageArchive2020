@@ -1,0 +1,203 @@
+body{
+    background-color: palegoldenrod;
+    margin: 0;
+}
+
+#address{
+    font-size: 12px;
+    margin-right: 85px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    z-index:1000;
+}
+li{
+    float: left;
+    border-right:1px solid #bbb;
+    border-left:1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+
+ul.top{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    z-index:1000;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active){
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 775px){
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size:50px;
+    font-family: "Impact";
+}
+
+.myForm {
+    font-family: "Arial";
+    font-size: 0.8em;
+    width: 30em;
+    padding: 1em;
+}
+
+.myForm * {
+    box-sizing: border-box;
+}
+
+.myForm fieldset{
+    border: none;
+    padding: 0;
+}
+
+.myForm legend, .myForm label{
+    padding: 0;
+    font-weight: bold;
+}
+
+.myForm label.choice{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.myForm label{
+    text-align: left;
+    display: block;
+    padding: 5px;
+}
+
+.myForm input[type="text"],
+.myForm input[type="email"],
+.myForm input[type="tel"],
+.myForm select,
+.myForm textarea{
+    float: right;
+    width: 60%;
+    border: 1px solid #ccc;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.myForm textarea{
+    height: 100px;
+}
+
+.myForm input[type="radio"]{
+    margin-left:40%;
+}
+
+.myForm button{
+    padding: 1em;
+    border-radius: 0.5em;
+    background: #4CAF50;
+    border: none;
+    font-weight: bold;
+    margin-left: 40%;
+    margin-top: 15px;
+}
+
+.myForm button:hover{
+    background: #006400;
+    cursor: pointer;
+}
+
+.footer{
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+}
+.footer img{
+    height:50px;
+    width:100px;
+}
+
+#logo{
+    float:left;
+}
+
+#sign{
+    float: right;
+}
+
+#luxury{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 500px){
+    .myForm input[type="text"],
+    .myForm input[type="email"],
+    .myForm input[type="tel"],
+    .myForm select,
+    .myForm textarea,
+    .myForm label{
+        width: 40%;
+        margin-left:0;
+        text-align: left;
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .footer {
+        position: relative;
+    }
+}

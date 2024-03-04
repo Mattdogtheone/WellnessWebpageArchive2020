@@ -1,0 +1,169 @@
+body {
+    background-color: palegoldenrod;
+    margin: 0;
+}
+
+#address{
+    font-size: 12px;
+    margin-right: 85px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    z-index:1000;
+}
+li{
+    float: left;
+    border-right:1px solid #bbb;
+    border-left:1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+
+ul.top{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active){
+    background-color: black;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 775px){
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+.container{
+    position: relative;
+    text-align:center;
+    font-style: oblique;
+}
+
+#door{
+    height: 500px;
+    width: 100%;
+}
+
+.text-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: gold;
+    font-size: 25px;
+}
+
+
+h1{
+    font-family: "Parry Hotter";
+    font-size: 45px;
+    text-align: center;
+    color: whitesmoke;
+    float: top;
+}
+
+#reasons{
+    text-align: center;
+    font-family: "Book Antiqua";
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.titles{
+    font-variant: small-caps;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.texts{
+    font-size: 20px;
+}
+
+.footer{
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+}
+.footer img{
+    height:50px;
+    width:100px;
+}
+
+#logo{
+    float:left;
+}
+
+#sign{
+    float: right;
+}
+
+#luxury{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media only screen and (max-width: 500px){
+    h1{
+        font-size:30px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #door{
+        height: 250px;
+    }
+}

@@ -1,0 +1,168 @@
+body{
+    background-color: palegoldenrod;
+    margin: 0;
+}
+
+#address{
+    font-size: 12px;
+    margin-right: 85px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+}
+li{
+    float: left;
+    border-right:1px solid #bbb;
+    border-left:1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+
+ul.top{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.button{
+    padding: 1em;
+    border-radius: 0.5em;
+    background: #4CAF50;
+    border: none;
+    font-weight: bold;
+    margin-left: 0%;
+    margin-top: 15px;
+}
+
+.button:hover{
+    background: #006400;
+    cursor: pointer;
+}
+
+
+ul.topnav li a:hover:not(.active){
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 775px){
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+.container{
+    position: relative;
+    font-family:"Lucida Console";
+    text-align:center;
+    font-style: oblique;
+}
+
+#title{
+    font-size: 25px;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1{
+    text-align: center;
+    color: #556B2F;
+    font-size:40px;
+
+}
+
+#firstrow{
+    text-align: center;
+}
+
+.otherrow{
+    text-align: left;
+}
+
+.footer{
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+}
+.footer img{
+    height:50px;
+    width:100px;
+}
+
+#logo{
+    float:left;
+}
+
+#sign{
+    float: right;
+}
+
+#luxury{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
